@@ -10,22 +10,39 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-
 const pigLatin = (word) => {
 
-  // Your code here
+  console.log(`Your word is ${word}`);
+  word = word.trim().toLowerCase();
+  let firstLetter = word.charAt(0);
 
+  if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
+    let vowelFirst = word + "yay";
+    console.log(`${word} starts with a vowel`)
+    console.log(`${vowelFirst}`)
+
+    return vowelFirst
+
+  } else {
+    let firstMatch = word.match(/[aeiou]/g) || 0;
+    let vowel = word.indexOf(firstMatch[0]);
+    let consFirst = word.substring(vowel) + word.substring(0, vowel) + "ay";
+    console.log(`${word} starts with a consonant`)
+    console.log(`${consFirst}`)
+
+    return consFirst
+
+  }
 }
 
-// the first function called in the program to get an input from the user
-// to run the function use the command: node main.js
-// to close it ctrl + C
 const getPrompt = () => {
   rl.question('word ', (answer) => {
     console.log( pigLatin(answer) );
     getPrompt();
   });
 }
+
+
 
 // Unit Tests
 // to use them run the command: npm test main.js
@@ -55,11 +72,6 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
-
-
-
-
-
 
 // **********
 //   HINTS
