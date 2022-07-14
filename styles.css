@@ -1,3 +1,93 @@
-h1 {
-    background-color: pink;
+/*/* CSS HEX */
+/*--lilac-luster: #BB9AA5ff;*/
+/*--orchid-pink: #F8C5D4ff;*/
+/*--dark-jungle-green: #101715ff;*/
+/*--sizzling-red: #F64B5Bff;*/
+/*--tickle-me-pink: #FE88AEff;*!*/
+
+.project-container {
+    width: 75%;
+    background-color: #FE88AEff;
+    border: black 1px solid;
+    height: 875px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 25px;
+    border-radius: 5%;
+
 }
+
+
+.pig-button {
+    box-shadow: 0 0 25px;
+    border: pink 2px solid;
+    border-radius: 25%;
+    margin-top: 50px;
+}
+
+.pig-button2 {
+    box-shadow: 0 0 25px;
+    border: black 2px solid;
+    border-radius: 5%;
+    margin-top: 10px;
+
+}
+
+.button  {
+    margin-top: 30px;
+    background-color: black;
+    color: hotpink;
+    box-shadow: 0 0 25px;
+    font-size: 25px;
+}
+
+.reset {
+    margin-top: 30px;
+    background-color: black;
+    color: hotpink;
+    box-shadow: 0 0 25px;
+    font-size: 25px;
+}
+
+
+.header {
+    margin-top: 25px;
+
+}
+
+.text-input {
+    width: 75%;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text-output {
+    background-color: rgba(255, 192, 203, .7);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: hotpink;
+    justify-content: center;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+body {
+    background-color: #F8C5D4ff;
+    text-align: center;
+    padding-top: 200px;
+}
+

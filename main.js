@@ -73,6 +73,42 @@ if (typeof describe === 'function') {
 
 }
 
+//from here up is the function for JS
+
+//from here down is attached to HTML File for JS
+
+let input = pigLatin();
+
+const textInput = document.getElementById('textInput')
+const textOutput = document.getElementById('textOutput')
+const button = document.getElementById('button')
+const reset = document.getElementById('reset')
+
+console.log()
+
+//Event Listeners
+// console.log(textInput)
+
+textInput.addEventListener('click', (event)=>{
+  const input = event.target.value;
+  textOutput.innerText = pigLatin(input);
+
+})
+// textInput.addEventListener('click', (event) => {
+//   const input = event.target.value
+//   console.log(input)
+//   textOutput.innerText = input;
+// })
+
+button.addEventListener('click', (event) => {
+  console.log(pigLatin(input))
+})
+
+reset.addEventListener('click', (event) => {
+  console.log('click')
+})
+
+
 // **********
 //   HINTS
 // **********
