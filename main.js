@@ -101,13 +101,19 @@ textInput.addEventListener('click', (event)=>{
 // })
 
 button.addEventListener('click', (event) => {
- let pigWord = pigLatin(input)
-  textOutput.innerText = pigWord
+  let words = input.split(' ');
+  let word = words.map(word => pigLatin(word)).join(' ');
+  textOutput.innerText = word;
 })
 
 reset.addEventListener('click', (event) => {
+  textInput.value = '';
+  textOutput.innerText='';
+  input = '';
   console.log('click')
 })
+
+
 
 
 // **********
