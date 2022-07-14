@@ -91,7 +91,7 @@ console.log()
 
 textInput.addEventListener('click', (event)=>{
   const input = event.target.value;
-  textOutput.innerText = pigLatin(input);
+
 
 })
 // textInput.addEventListener('click', (event) => {
@@ -101,7 +101,8 @@ textInput.addEventListener('click', (event)=>{
 // })
 
 button.addEventListener('click', (event) => {
-  console.log(pigLatin(input))
+ let pigWord = pigLatin(input)
+  textOutput.innerText = pigWord
 })
 
 reset.addEventListener('click', (event) => {
