@@ -12,8 +12,9 @@ const rl = readline.createInterface({
 
 const pigLatin = (word) => {
 
-  console.log(`Your word is ${word}`);
+
   word = word.trim().toLowerCase();
+  console.log(`Your word is ${word}`);
   let firstLetter = word.charAt(0);
 
   if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
@@ -77,41 +78,6 @@ if (typeof describe === 'function') {
 
 //from here down is attached to HTML File for JS
 
-let input = pigLatin();
-
-const textInput = document.getElementById('textInput')
-const textOutput = document.getElementById('textOutput')
-const button = document.getElementById('button')
-const reset = document.getElementById('reset')
-
-console.log()
-
-//Event Listeners
-// console.log(textInput)
-
-textInput.addEventListener('click', (event)=>{
-  const input = event.target.value;
-
-
-})
-// textInput.addEventListener('click', (event) => {
-//   const input = event.target.value
-//   console.log(input)
-//   textOutput.innerText = input;
-// })
-
-button.addEventListener('click', (event) => {
-  let words = input.split(' ');
-  let word = words.map(word => pigLatin(word)).join(' ');
-  textOutput.innerText = word;
-})
-
-reset.addEventListener('click', (event) => {
-  textInput.value = '';
-  textOutput.innerText='';
-  input = '';
-  console.log('click')
-})
 
 
 

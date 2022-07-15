@@ -9,7 +9,7 @@
     width: 75%;
     background-color: #FE88AEff;
     border: black 1px solid;
-    height: 875px;
+    height: 1000px;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -88,6 +88,14 @@
 body {
     background-color: #F8C5D4ff;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 125px;
 }
 
+.text-output {
+    border-radius: 10%;
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
